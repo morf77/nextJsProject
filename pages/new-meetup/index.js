@@ -1,22 +1,13 @@
 import Link from 'next/link';
 import { Fragment } from "react";
+import NewMeetupForm from '../../components/meetups/NewMeetupForm';
 
 function NewMeetUp() {
-  return (
-    <Fragment>
-      <h1>The news Page</h1>
-      <ul>
-        <li>
-          <Link href="/news/nextjs-is-a-great-framework">
-            NextJs Is A Great Framework
-          </Link>
-        </li>
-        <li>
-          <Link href="">Something Else</Link>
-        </li>
-      </ul>
-    </Fragment>
-  );
+  function addMeeupHandler (enteredMeetupData) {
+    console.log(enteredMeetupData)
+  }
+
+  return <NewMeetupForm onAddMeetup={addMeeupHandler} />
 }
 
 export default NewMeetUp;

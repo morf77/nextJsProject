@@ -1,12 +1,17 @@
 import { useRouter } from "next/router";
+import MeetupDetail from "../../components/meetups/MeetupDetail";
 
-
-function DetailPage () {
+function MeetupDetails () {
     const router = useRouter();
 
     const newsId = router.query.newsId;
 
-    return <h1>The detail Page</h1>
+    return (<MeetupDetail 
+        image =""
+        title="hi"
+        address=""
+        description=""
+    />);
 }
 
-export default DetailPage;
+export default MeetupDetails;
