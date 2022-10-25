@@ -27,11 +27,23 @@ function HomePage(props) {
   return <MeetupList meetups={props.meetups} />;
 }
 
+// export async function getServerSidePops(context){
+//     const req = context.req;
+//     const res = context.res;
+
+//     return {
+//         props : {
+//             meetups: dummy_meetups
+//         }
+//     }
+// }
+
 export async function getStaticProps () {
     return {
         props: {
             meetups : dummy_meetups
-        }
+        },
+        revalidate: 10  
     };
 }
 
