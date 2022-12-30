@@ -25,8 +25,8 @@ function NewMeetUp() {
   return (
     <Fragment>
       <Head>
-        <title>React New Meetups</title>
-        <meta name="description" content="Add your own meetups" />
+        <title>Love</title>
+        <meta name="description" content="Add your own Love Story" />
       </Head>
       <NewMeetupForm onAddMeetup={addMeeupHandler} />
     </Fragment>
